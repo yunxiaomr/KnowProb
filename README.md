@@ -9,6 +9,6 @@ This includes the dataset source and code implementation of the [KnowProb](https
 
 
 ## 🌈 An Overview of the KnowProb Framework
-![image](https://github.com/yunxiaomr/KnowProb/blob/main/knowprob_overview.png)
+![image](https://github.com/yunxiaomr/KnowProb/blob/main/KnowProb1.png)
 
 
