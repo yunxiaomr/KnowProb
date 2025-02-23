@@ -12,6 +12,9 @@ This includes the dataset source and code implementation of the [KnowProb](https
 
 
 
+![panorama](https://github.com/yunxiaomr/KnowProb/blob/main/knowprob_overview.png)
+
+
 
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
