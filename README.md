@@ -12,7 +12,7 @@ This includes the dataset source and code implementation of the [KnowProb](https
 
 
 
-![panorama](https://github.com/yunxiaomr/KnowProb/blob/main/Example0.png)
+![panorama](https://github.com/yunxiaomr/KnowProb/blob/main/example.png)
 
 
 
