@@ -16,6 +16,40 @@ This includes the dataset source and code implementation of the [KnowProb](https
 
 
 
+
+
+## Citation
+Please kindly cite our paper if the work is helpful.
+```bibtex
+@inproceedings{zhao-etal-2025-knowprob,
+    title = "Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective",
+    author = "Zhao, Yunxiao  and
+      Hao, Xu and
+      Wang, Zhiqiang  and
+      Li, Xiaoli  and
+      Liang, Jiye  and
+      Li, Ru",
+    month =may,
+    year = "2025",
+    address = {Berlin, Heidelberg},
+    publisher = {Springer-Verlag},
+    booktitle = {Database Systems for Advanced Applications: 30th International Conference, DASFAA 2025, Singapore, Singapore, May 26–29, 2025, Proceedings, Part XXX},
+    pages = {xxx–xxx},
+    numpages = {xxx},
+    keywords = {Knowledge Probing, Black Box, Post-hoc Explanation},
+    location = {Singapore, Singapore}
+}
+
+
+
+```
+
+
+
+
+
+
+
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
