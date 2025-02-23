@@ -39,9 +39,6 @@ Please kindly cite our paper if the work is helpful.
     keywords = {Knowledge Probing, Black Box, Post-hoc Explanation},
     location = {Singapore, Singapore}
 }
-
-
-
 ```
 
 
