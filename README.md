@@ -5,7 +5,7 @@ DASFAA2025: Explaining Black-box Language Models with Knowledge Probing Systems:
 
 [![CC BY-NC 4.0][cc-by-nc-sa-shield]][cc-by-nc]
 
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+![CC BY-NC-SA 4.0][cc-by-nc-sa-shield][cc-by-nc-sa]
 
 This reprositoryis licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
