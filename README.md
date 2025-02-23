@@ -2,10 +2,7 @@
 DASFAA2025: Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective (Long Oral)
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
-
 [![CC BY-NC 4.0][cc-by-nc-sa-shield]][cc-by-nc]
-
-![CC BY-NC-SA 4.0][cc-by-nc-sa-shield][cc-by-nc-sa]
 
 This reprositoryis licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
@@ -16,4 +13,11 @@ This includes the dataset source and code implementation of the [KnowProb](https
 
 
 
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
