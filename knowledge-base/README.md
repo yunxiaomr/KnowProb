@@ -2,7 +2,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
-This reprositoryis licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 
 ## Introduction
