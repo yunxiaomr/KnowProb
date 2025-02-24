@@ -1,0 +1,2604 @@
+[
+    {
+        "frame_name": "辨别",
+        "frame_ename": "Differentiation",
+        "frame_def": "该框架表示认知者找出两组现象之间的差别，这两组现象可能用一个语言单位合起来表示，也可能分开表示。",
+        "fes": [
+            {
+                "fe_name": "认知者",
+                "fe_abbr": "cog",
+                "fe_ename": "Cognizer",
+                "fe_def": "认知者是认为两组现象之间存在区别的有意识主体。"
+            },
+            {
+                "fe_name": "现象群",
+                "fe_abbr": "phen_pl",
+                "fe_ename": "Phenomena",
+                "fe_def": "被认为具有某种差别的两组现象，在表达中合起来用同一个成分表示。"
+            },
+            {
+                "fe_name": "现象1",
+                "fe_abbr": "phen_1",
+                "fe_ename": "Phenomenon_1",
+                "fe_def": "被认为互相之间具有差别的那些现象可以用不同的成分分别表示，其中语序靠前的为现象1，另一个为现象2，如果只表达出一个现象，则为现象1."
+            },
+            {
+                "fe_name": "现象2",
+                "fe_abbr": "phen_2",
+                "fe_ename": "Phenomenon_2",
+                "fe_def": "当两组现象共同出现在句中时，语序靠后的为现象2。"
+            },
+            {
+                "fe_name": "特征项",
+                "fe_abbr": "feat",
+                "fe_ename": "Feature",
+                "fe_def": "认知者辨别现象所依据的特征类型，通常用\"从，根据，通过\"等引导的介词短语表示。"
+            },
+            {
+                "fe_name": "背景",
+                "fe_abbr": "ground",
+                "fe_ename": "Ground",
+                "fe_def": "即现象所处的认知背景，通常用\"从\"引导的介词短语表示。注意，背景并不是现象2，而是现象1和现象2所共同存在的认知背景。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "环境条件表示认知者对现象进行分析时所处的历史阶段、社会状况、物理条件等等。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性，表示事件所达到的水平。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语、定语或补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "描述事件所处的状态。该元素是一个杂类，用来概括那些无法归入其他更具体的框架元素的语义成分。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "认知者为辨别现象而主动采取的方法或采用的方式。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示辨别出或没有辨别出某种现象。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "表示动作行为或状态的发生、进行或结束在时间维度上所处的相对位置，既包括时间点（三点、零时、八点半等），也包括时间段（早上、凌晨、傍晚、唐朝、昨天、元月、1999年等）。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "获知",
+        "frame_ename": "Coming_to_believe",
+        "frame_def": "认知者形成对某事物的认识（内容），有时需要经过一番思考或借助于另一个人或事物（根据/方法）才能形成这种认识。",
+        "fes": [
+            {
+                "fe_name": "认知者",
+                "fe_abbr": "cog",
+                "fe_ename": "Cognizer",
+                "fe_def": "认知者是形成对事物的认识的人。"
+            },
+            {
+                "fe_name": "内容",
+                "fe_abbr": "con",
+                "fe_ename": "Content",
+                "fe_def": "内容是认知者大脑中获得的信息。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "根据在该框架中一般是某个消息来源、某种常识或者某种认识，用介词短语\"从…\"、\"根据…\"等表示。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "帮助认知者完成获知行为的手段。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性，表示事件达到了什么水平。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "该元素是一个杂类，在无法归入其他各类非核心框架元素的情况下，凡是描述获知活动的特征或所处状态的成分，都归入该元素，如\"容易、很难\"等。注意，修饰元素是对事件本身的描述，而形容元素是对事件参与者的描述。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "认知者得知内容的时间。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "该框架中，有时出现关涉元素，形式是介词短语\"关于/对于…\"等。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "陈述",
+        "frame_ename": "Statementa",
+        "frame_def": "此框架表达的是说话者用语言向听话者传达信息的行为。",
+        "fes": [
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "媒介是说话者用来传达信息的物理实体或渠道。"
+            },
+            {
+                "fe_name": "信息",
+                "fe_abbr": "msg",
+                "fe_ename": "Message",
+                "fe_def": "说明说话者向听话者传达的内容，通常用小句或名词短语的形式表现。"
+            },
+            {
+                "fe_name": "说话者",
+                "fe_abbr": "spkr",
+                "fe_ename": "Speaker",
+                "fe_def": "说话者是提供信息的人（无论是说还是写）。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "关涉是与信息有关的内容。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "说话者在陈述中所处的状态。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "该元素是一个杂类，在无法归入其他各类非核心框架元素的情况下，凡是描述陈述活动的特征或所处状态的成分，都归入该元素，如\"认真、坦白地\"等。注意，修饰元素是对事件本身的描述，而形容元素是对事件参与者的描述。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "说话者进行陈述的时间。"
+            },
+            {
+                "fe_name": "听话者",
+                "fe_abbr": "add",
+                "fe_ename": "Addressee",
+                "fe_def": "信息传达的对象。经常用“对”或“向”引导的介词短语表示。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "动作行为所采取的方法、形式。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "逮捕",
+        "frame_ename": "Arrest",
+        "frame_def": "官方指控被怀疑犯罪的犯罪嫌疑人，司法机关作出逮捕决定，官方执行这一决定，并把犯罪嫌疑人羁押起来，这是最严厉的刑事诉讼强制措施。",
+        "fes": [
+            {
+                "fe_name": "官方",
+                "fe_abbr": "auth",
+                "fe_ename": "Authorities",
+                "fe_def": "官方指指控犯罪嫌疑人犯罪，并执行逮捕决定、羁押犯罪嫌疑人的机构，一般指公安机关。"
+            },
+            {
+                "fe_name": "指控",
+                "fe_abbr": "chrgs",
+                "fe_ename": "Charges",
+                "fe_def": "指控罪名在法律体系内对犯罪种类进行区分，它是犯罪嫌疑人被指控的罪名。"
+            },
+            {
+                "fe_name": "罪行",
+                "fe_abbr": "offense",
+                "fe_ename": "Offense",
+                "fe_def": "犯罪行为表示嫌疑犯被逮捕的原因。"
+            },
+            {
+                "fe_name": "嫌疑人",
+                "fe_abbr": "suspect",
+                "fe_ename": "Suspect",
+                "fe_def": "犯罪嫌疑人是被指控犯罪的人。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "对逮捕行为所做的描述。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "表示官方逮捕犯罪嫌疑人所使用的手段。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "逮捕发生的地点。"
+            },
+            {
+                "fe_name": "法律依据",
+                "fe_abbr": "sla",
+                "fe_ename": "Source_of_legal_authority",
+                "fe_def": "描述了准予官方逮捕犯罪嫌疑人的法律条文。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "逮捕发生的时间。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。 "
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "盗窃",
+        "frame_ename": "Theft",
+        "frame_def": "以非法占有为目的，秘密窃取数额较大的公私财物或者多次盗窃公私财物的行为。",
+        "fes": [
+            {
+                "fe_name": "财物",
+                "fe_abbr": "gds",
+                "fe_ename": "Goods",
+                "fe_def": "被盗窃犯偷走的东西。"
+            },
+            {
+                "fe_name": "犯罪者",
+                "fe_abbr": "perp",
+                "fe_ename": "Perpetrator",
+                "fe_def": "实施盗窃行为的人。"
+            },
+            {
+                "fe_name": "起点",
+                "fe_abbr": "src",
+                "fe_ename": "Source",
+                "fe_def": "被盗物品最初所在地。"
+            },
+            {
+                "fe_name": "受害者",
+                "fe_abbr": "vic",
+                "fe_ename": "Victim",
+                "fe_def": "财物被盗的人。"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "盗窃事件发生的次数。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "盗窃犯实施盗窃所使用的器物。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "对盗窃行为进行的描述。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "盗窃犯实施盗窃时所采用的方法。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "盗窃事件发生的地点。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "犯罪者实施盗窃的目的。"
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "促使犯罪者实施盗窃的原因。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "表示动作行为或状态的发生、进行或结束在时间维度上所处的相对位置，既包括时间点（三点、零时、八点半等），也包括时间段（早上、凌晨、傍晚、唐朝、昨天、元月、1999年等）。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。 "
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "发声",
+        "frame_ename": "Make_noise",
+        "frame_def": "一个物理实体作为声源，发出一个声响；声源可以是无生体，也可以是动物或人，后者用声道发出声音；有时用一个名词性成分表示声音本身，成为声响；同时，该框架也可以出现表示修饰的词语，这些词语描述声响的特征。",
+        "fes": [
+            {
+                "fe_name": "有声事件",
+                "fe_abbr": "noi_eve",
+                "fe_ename": "Noisy_event",
+                "fe_def": "一个或多个声源参与的伴随着声响的事件。"
+            },
+            {
+                "fe_name": "声响",
+                "fe_abbr": "sound",
+                "fe_ename": "Sound",
+                "fe_def": "声响元素有时隐含在该框架所包含动词词元的语义中，有时则由单独的名词性成分充当，后者标注为声响。"
+            },
+            {
+                "fe_name": "声源",
+                "fe_abbr": "sound_src",
+                "fe_ename": "Sound_source",
+                "fe_def": "表示发出声音的物理实体，这个实体必须有比较复杂的内部结构，以使它能够发出声音，例如，一个带有可移动的部件的机器或有声带的动物、人，能靠自身发出声音。"
+            },
+            {
+                "fe_name": "信息接收者",
+                "fe_abbr": "add",
+                "fe_ename": "Addressee",
+                "fe_def": "信息接收者表示听者，他听到所产生的声音。"
+            },
+            {
+                "fe_name": "方向",
+                "fe_abbr": "dir",
+                "fe_ename": "Direction",
+                "fe_def": "表示声源朝哪里或朝谁发出声音，注意该元素有时和信息接收者容易产生混淆，但是信息接收者元素不能做介词短语的宾语，而方向需要用介词短语表示。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "事件发生的程度。"
+            },
+            {
+                "fe_name": "描述",
+                "fe_abbr": "dep",
+                "fe_ename": null,
+                "fe_def": "在行为过程中声源所处的状态。"
+            },
+            {
+                "fe_name": "声源位置",
+                "fe_abbr": "loc_src",
+                "fe_ename": null,
+                "fe_def": "声源所处的位置，声响从其中发出。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "描述声音的特征，如：吵闹地，刺耳地，等等。"
+            },
+            {
+                "fe_name": "路径",
+                "fe_abbr": "path",
+                "fe_ename": "Path",
+                "fe_def": "声响沿着路径从声源处发出。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "声源所在的处所。该框架元素和声源位置只是叙述视角不同，实际上指的是同一种情况，二者有明显的语序差别：表示空间的词语在声源之前，表示声源位置的词语在声源之后，\"观众席中发出惊叹声\"这样的没有\"声源\"出现的句子，表示处所的状语仍为声源位置。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "亚区是声源的局部区域，声音从中发出。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "有声事件发生的时间。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。 "
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "动作行为所采取的方法、形式。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况。通常做宾语"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "发现",
+        "frame_ename": "Becoming_aware",
+        "frame_def": "该框架表示认知者发现某现象。[发现]与[获知]框架相似，但后者表示的是最终达到了完全的认识和理解，而[发现]只涉及认识过程的起点，[发现]表示对实体的认识，而无需给出这个认识的具体内容；[发现]的词语与[感知觉]词语也有关联，因为人总是通过感知事物来认识事物的。",
+        "fes": [
+            {
+                "fe_name": "认知者",
+                "fe_abbr": "cog",
+                "fe_ename": "Cognizer",
+                "fe_def": "认知者是发现现象的人，通常做主语。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象是认知者发现的一个实体或状况，通常做宾语。\r\n"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "认知者使用某工具来认识现象。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "该元素表示认知者通过什么行为认识现象。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "该元素描述事件有层级差别的属性,表示事件所达到的水平。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "协助认知者发现某事物的实体或事件，通常用介词短语\"从/根据…\"等表示。"
+            },
+            {
+                "fe_name": "背景",
+                "fe_abbr": "ground",
+                "fe_ename": "Ground",
+                "fe_def": "被认知者发现的现象所处的背景或环境，通常用表示处所的介词短语表示。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "该元素是一个杂类，在无法归入其他各类非核心框架元素的情况下，凡是描述发现活动的特征或所处状态的成分，都归入该元素，如\"容易、轻易\"等。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示认知者发出认知活动的目标，认知者认为通过认识某现象可以实现这个目标。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "表示现象或认知者在事件过程中所处的状态。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "该元素表示认知者认识现象的时间。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "表示现象所属的范围。  "
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（\"在高温下\"等）、社会状况等。通常用介词短语\"在……情况下\"、\"在……条件下\"等表示。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "范畴化",
+        "frame_ename": "Categorization",
+        "frame_def": "认知者认为某些现象符合某种范畴的特征，在认识上将其归入该范畴，或将多个现象分化成几个不同的范畴。",
+        "fes": [
+            {
+                "fe_name": "范畴",
+                "fe_abbr": "categ",
+                "fe_ename": "Category",
+                "fe_def": "范畴是一个抽象的概念，现象是范畴的一个实例，通常用目标词的宾语表示。"
+            },
+            {
+                "fe_name": "认知者",
+                "fe_abbr": "cog",
+                "fe_ename": "Cognizer",
+                "fe_def": "进行归类或分类的人，通常由主语表示。"
+            },
+            {
+                "fe_name": "特征项",
+                "fe_abbr": "feat",
+                "fe_ename": "Feature",
+                "fe_def": "特征项表示个体能够归入某范畴所具备的基本属性，它为认识事物提供一个评定维度，各种现象在此维度上占据不同的位置，从而归入不同的范畴。例如，一部画作可以从颜色、质地（光面、糙面）进行分类；如果以颜色分，有的就可以归入橙色系，有的归入红色系。特征项元素通常用\"根据\"引导的介词短语表示。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "现象指认知者所分析考察的实体，作为某种范畴的成员。\r\n\r\n"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "进行归类或分类时所处的物理条件或社会状况。\r\n\r\n"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "该元素是一个杂类，在无法归入其他各类非核心框架元素的情况下，凡是描述自主感知活动的特征或所处状态的成分，都归入该元素，如\"勉强、明显\"等。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "认知者进行归类或分类时所采取的行为措施。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "表示范畴化是什么时候进行的。"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在每个单位时间所发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素并不表示目标词在本句之内的重复，而是把目标词置于上下文中，认为目标词所表示的动作是重复前面的动作，或仅仅是假想目标词动作是一系列相似事件或状态的重复。用\"序数词语＋动量词\"、\"又、再\"、\"首次、首先\"等表示。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示认知者或现象的数量范围，常用数量短语、副词\"都、只\"等表示。他把听到的一切都看成人们的捕风捉影。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。 "
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "非自主感知",
+        "frame_ename": "Perception_experiencea",
+        "frame_def": "感知者通过经历某种感知活动，在大脑中形成了对现象的认识（印象）。在此期间，感知者并不是自发地有意识地控制着感知活动的发生、发展，能否获得认识或者能否获得正确的印象，也并不是感知者所能控制的，因此，我们称感知者为\"非自主感知者\"，这种感知活动也就相应地称为\"非自主感知\"。注意，[自主感知]框架和[非自主感知]框架所含词语是不同的，例如，[自主感知]包含\"看，听\"，而[非自主感知]的词语则是\"看见，听见\"；这两个框架也包含相同的词语，如\"感觉\"，\"我感觉浑身疼痛\"，属于[非自主感知]，\"就像我们的物理学家所说，人应该切身地来感觉核反应堆\"，属于[自主感知]，但\"感觉\"一词很少用来表达这种自主感知活动。",
+        "fes": [
+            {
+                "fe_name": "非自主感知者",
+                "fe_abbr": "perc_pass",
+                "fe_ename": "Perceiver_passive",
+                "fe_def": "该元素指获得某种认识的人，这个人并不能自主控制感知觉活动的发生、发展，也不能决定能否正确认识现象，通常用主语表示。"
+            },
+            {
+                "fe_name": "印象",
+                "fe_abbr": "possib",
+                "fe_ename": "Possibilities",
+                "fe_def": "由感知觉而得到的印象，是现象在大脑中的表征，通常用宾语表达。"
+            },
+            {
+                "fe_name": "身体部位",
+                "fe_abbr": "bodp",
+                "fe_ename": "Body_part",
+                "fe_def": "表示感知觉活动所借助的感觉器官，用名词性短语或介词短语表示。"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "是存在于人的认识之外的实体、事件等，作为感知觉活动的对象，刺激人的感官，使感知者获得关于该现象的印象。因此，现象和印象的差别在于，现象存在于人的意识之外，而印象是现象在人的大脑中的表征，当感知者正确地感知某现象时，会使得印象与现象相符，当感知者错误地感知现象时，所获得的印象就不符合实际存在的现象。在非自主感知活动中，突显的是印象，现象元素在表达中很少出现，一般用\"对\"引导的介词短语表示。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性，表示事件达到了什么水平。\r\n"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。"
+            },
+            {
+                "fe_name": "方向",
+                "fe_abbr": "dir",
+                "fe_ename": "Direction",
+                "fe_def": "该元素描述感知者的注意力在感知活动中朝向哪里。注意，该元素与下面的感知者位置不同，方向表示动作的方向，而感知者位置表示的是非自主感知者在感知活动中所处的位置。"
+            },
+            {
+                "fe_name": "背景",
+                "fe_abbr": "ground",
+                "fe_ename": "Ground",
+                "fe_def": "背景是现象所处的位置，作为感知觉活动的背景场所，用处所短语表示。\r\n\r\n"
+            },
+            {
+                "fe_name": "感知者位置",
+                "fe_abbr": "loc_perc",
+                "fe_ename": "Location_of_perceiver",
+                "fe_def": "该框架元素表明感知者在感知过程中所处的位置，用\"从、在\"等引导的介词短语等形式表示，做状语。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "表示感知觉活动发生的地点，感知者和现象都在其中。"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "该元素是一个杂类，在无法归入其他各类非核心框架元素的情况下，凡是描述感知活动的特征或所处状态的成分，都归入该元素。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "感知者通过某种行为或事物进行感知，这种行为或事物就是方法。\r\n\r\n"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "获得感知经验的时间。\r\n\t"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表明事件的参与者的身份。"
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "动作行为所依从的标准、前提或基础。依据的所指往往是计划、条例、准则、法则、样式、指示、命令、要求、条约、精神、文件、意见、规程、提纲、菜谱、证明、证件等，多数是抽象的事物，跟工具和材料相比，其抽象性更加明显。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "目标词所表示的动作行为的客体所涉及的认知范围或话题。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "目标词所表示的事件所发生的领域。"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+    {
+        "frame_name": "观点",
+        "frame_ename": "Opinion",
+        "frame_def": "一个认知者对某现象持有某一观点。",
+        "fes": [
+            {
+                "fe_name": "认知者",
+                "fe_abbr": "cog",
+                "fe_ename": "Cognizer",
+                "fe_def": "认知者是提出观点的人。"
+            },
+            {
+                "fe_name": "观点",
+                "fe_abbr": "opi",
+                "fe_ename": null,
+                "fe_def": "认知者的想法，这种想法不一定被接受，并且它一般是基于认知者的立场提出的。\r\n\r\n"
+            },
+            {
+                "fe_name": "现象",
+                "fe_abbr": "phen",
+                "fe_ename": "Phenomenon",
+                "fe_def": "认知者在观点中所考虑的对象。"
+            },
+            {
+                "fe_name": "坚定性",
+                "fe_abbr": "con",
+                "fe_ename": null,
+                "fe_def": "认知者持有某一观点的坚定程度。"
+            },
+            {
+                "fe_name": "领域",
+                "fe_abbr": "dom",
+                "fe_ename": "Domain",
+                "fe_def": "所考虑的观点所属的范畴。"
+            },
+            {
+                "fe_name": "根据",
+                "fe_abbr": "evid",
+                "fe_ename": "Evidence",
+                "fe_def": "认知者的观点所依赖的事件或事物状态。\r\n\r\n"
+            },
+            {
+                "fe_name": "方式",
+                "fe_abbr": "manr",
+                "fe_ename": "Manner",
+                "fe_def": "描述认知者如何持有某一观点，这种描述不属于更具体一些的框架元素；是一个杂类，那些无法归入其他元素的外围成分，只要是对事件本身的描述，都属于该元素。 "
+            },
+            {
+                "fe_name": "身份",
+                "fe_abbr": "role",
+                "fe_ename": "Role",
+                "fe_def": "表示认知者或思考对象的身份或所属范畴。\r\n\r\n"
+            },
+            {
+                "fe_name": "主题",
+                "fe_abbr": "top",
+                "fe_ename": "Topic",
+                "fe_def": "认知者的观点所涉及的事物，注意在这个框架中，由\"对/对于\"引导的介词短语表示的是现象，不是关涉，典型的关涉是由\"关于\"、\"就\"（如\"就这个问题\"）等引导的介词短语。"
+            },
+            {
+                "fe_name": "时间",
+                "fe_abbr": "time",
+                "fe_ename": "Time",
+                "fe_def": "表示动作行为或状态的发生、进行或结束在时间维度上所处的相对位置，既包括时间点（三点、零时、八点半等），也包括时间段（早上、凌晨、傍晚、唐朝、昨天、元月、1999年等）。"
+            },
+            {
+                "fe_name": "角色事件时间",
+                "fe_abbr": "tim_role",
+                "fe_ename": "Time_of_role",
+                "fe_def": "表示目标词所涉及的事件发生的时间，而不是目标词本身所表示的动作行为发生的时间。"
+            },
+            {
+                "fe_name": "动作时量",
+                "fe_abbr": "dur_action",
+                "fe_ename": "Duration_of_action",
+                "fe_def": "动作行为本身持续的时间数量或者动作重复进行所用的时间数量。"
+            },
+            {
+                "fe_name": "结果时量",
+                "fe_abbr": "dur_fin_st",
+                "fe_ename": "Duration_of_final_state",
+                "fe_def": "动作行为造成的结果状态所持续的时间长度"
+            },
+            {
+                "fe_name": "频率",
+                "fe_abbr": "freq",
+                "fe_ename": "Frequency",
+                "fe_def": "表示事件在单位时间内所发生的次数，一般可以用（“每”＋时间单位＋“多少次”）提问。"
+            },
+            {
+                "fe_name": "次数",
+                "fe_abbr": "iter",
+                "fe_ename": "Iteration",
+                "fe_def": "表示事件或者状态重复发生的次数。"
+            },
+            {
+                "fe_name": "特定次数",
+                "fe_abbr": "part_iter",
+                "fe_ename": "Particular_iteration",
+                "fe_def": "该框架元素表示，单独看目标词所在句子，并没有动作的重复，但把目标词置于上下文中，则认为目标词所表示的动作是重复前面的动作；还有可能仅仅是假想目标词动作是一系列相似事件或状态的重复（如“首次亮相”）。"
+            },
+            {
+                "fe_name": "处所",
+                "fe_abbr": "place",
+                "fe_ename": "Place",
+                "fe_def": "事件、状态发生的空间、场所。"
+            },
+            {
+                "fe_name": "角色位置",
+                "fe_abbr": "loc_x",
+                "fe_ename": "Location_of_X",
+                "fe_def": "表示事件的参与者所处的位置，该事件中其他参与者不和他共处一处。"
+            },
+            {
+                "fe_name": "亚区",
+                "fe_abbr": "subr",
+                "fe_ename": "Subregion",
+                "fe_def": "表示事件参与者自身的一部分。"
+            },
+            {
+                "fe_name": "接受者",
+                "fe_abbr": "reci",
+                "fe_ename": "Recipient",
+                "fe_def": "从事件中获得某物的参与者。"
+            },
+            {
+                "fe_name": "受益人",
+                "fe_abbr": "benef",
+                "fe_ename": "Beneficiary",
+                "fe_def": "表示从事件中获益的参与者。与接受者不同的是，受益人并不得到某物，而只是得到帮助，或者使受益人从劳动中解脱。"
+            },
+            {
+                "fe_name": "受损者",
+                "fe_abbr": "malef",
+                "fe_ename": "Maleficiary",
+                "fe_def": "与受益人相反，指遭受伤害或损失的参与者。"
+            },
+            {
+                "fe_name": "伴随实体",
+                "fe_abbr": "co_part",
+                "fe_ename": "Co_participant",
+                "fe_def": "表示和核心元素共同参与事件的非核心参与者。"
+            },
+            {
+                "fe_name": "形容",
+                "fe_abbr": "depic",
+                "fe_ename": "Depicitive",
+                "fe_def": "该元素在句法上从属于目标词，做状语/定语/补语，但在语义上描写的却是事件的参与者，表示参与者在事件过程中所处的状态。 "
+            },
+            {
+                "fe_name": "事件评价",
+                "fe_abbr": "eve_desc",
+                "fe_ename": "Event_description",
+                "fe_def": "对整个句子所描述的事件进行评价：有的表示说话者对于事件，感到在意料之中还是意料之外，有的表示对情况的推测和估计（看来，看起来，想来，看样子，说不定），有的表示肯定、强调等特定的口气（毫无疑问，没问题，不用说，不可否认，说真的，说实在的，老实说，不错）。"
+            },
+            {
+                "fe_name": "环境条件",
+                "fe_abbr": "circ",
+                "fe_ename": "Circumstances",
+                "fe_def": "表示外部世界的状态，通常是事件发生所需的事理、物理条件（“在高温下”等），既不是事件过程本身的状态，也不是事件参与者的状态，而是对事件所赖以发生的外部环境的描述。"
+            },
+            {
+                "fe_name": "背景事件",
+                "fe_abbr": "contain_even",
+                "fe_ename": "Containing_event",
+                "fe_def": "该元素的作用是把目标词所表示的事件置于一个更大的事件过程中，使目标词成为其中的一部分。"
+            },
+            {
+                "fe_name": "并行事件",
+                "fe_abbr": "co_even",
+                "fe_ename": "Coordinated_event",
+                "fe_def": "表示伴随目标词事件同时发生的另一个事件。"
+            },
+            {
+                "fe_name": "相关变量",
+                "fe_abbr": "co_var",
+                "fe_ename": "Correlated_variable",
+                "fe_def": "该元素表示和数量有关的属性，目标词事件的变化随着该数量的变化而变化。 "
+            },
+            {
+                "fe_name": "原因",
+                "fe_abbr": "rea",
+                "fe_ename": "Reason",
+                "fe_def": "表示引起目标动词所表示的动作行为和性质状态的原因。"
+            },
+            {
+                "fe_name": "目的",
+                "fe_abbr": "purp",
+                "fe_ename": "Purpose",
+                "fe_def": "表示动作行为发生/进行的目的。"
+            },
+            {
+                "fe_name": "工具",
+                "fe_abbr": "instru",
+                "fe_ename": "Instrument",
+                "fe_def": "动作发出者进行某种动作行为所使用的工具。和材料相比，工具具有不不变性，在动作进行的过程中或者严格地说在动词语义结构中，它的性质、状态或外形、数量、所属等具有不变性，而材料随着动作的进行是会改变的。"
+            },
+            {
+                "fe_name": "材料",
+                "fe_abbr": "mat",
+                "fe_ename": "Material",
+                "fe_def": "动作过程中所使用的原材料、耗费的物资。"
+            },
+            {
+                "fe_name": "方法",
+                "fe_abbr": "mns",
+                "fe_ename": "Means",
+                "fe_def": "动作行为所采取的方法、形式。"
+            },
+            {
+                "fe_name": "物量",
+                "fe_abbr": "amount",
+                "fe_ename": "Amount",
+                "fe_def": "事件参与者的数量。"
+            },
+            {
+                "fe_name": "角色范围",
+                "fe_abbr": "sco_role",
+                "fe_ename": "Scop_of_role",
+                "fe_def": "表示主体或客体的数量范围。"
+            },
+            {
+                "fe_name": "程度",
+                "fe_abbr": "degr",
+                "fe_ename": "Degree",
+                "fe_def": "描述事件有层级差别的属性。"
+            },
+            {
+                "fe_name": "媒介",
+                "fe_abbr": "medium",
+                "fe_ename": "Medium",
+                "fe_def": "实现目标词所表示的动作行为的物理实体或渠道。"
+            },
+            {
+                "fe_name": "视角",
+                "fe_abbr": "pov",
+                "fe_ename": "Point_of_view",
+                "fe_def": "动作行为者思考或表达观点时所采取的立场、观念或角度。"
+            },
+            {
+                "fe_name": "结果",
+                "fe_abbr": "result",
+                "fe_ename": "Result",
+                "fe_def": "表示事件的结果。"
+            },
+            {
+                "fe_name": "解释",
+                "fe_abbr": "expla",
+                "fe_ename": "Explanation",
+                "fe_def": "解释事件发生的原因"
+            }
+        ]
+    },
+]
