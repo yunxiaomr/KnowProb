@@ -12,7 +12,7 @@ For sentence instances with frame semantics, it consists of 100 sentences (sente
 
 
 If you want to access more data resources with frame semantic annotated, please feel free to contact [us](yunxiaomr@163.com). 
-We are pleased to offer resources for research purposes; however, it will require the signing of an agreement.
+We are pleased to offer resources for research purposes, and it will require the signing of an agreement.
 
 
 
