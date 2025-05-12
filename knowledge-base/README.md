@@ -11,7 +11,7 @@ Here, each frame has an average of 42.2 FEs.
 For sentence instances with frame semantics, it consists of 100 sentences (sentences-data-little.json), involving 10 instances of frames and 255 instances of FEs. 
 
 
-If you want to access more data resources with frame semantic annotated, please contact us by [email 1](yunxiaomr@163.com).
+If you want to access more data resources with frame semantic annotated, please contact [us](yunxiaomr@163.com).
 
 
 Please kindly cite our paper if those resources are helpful.
