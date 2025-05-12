@@ -1,22 +1,20 @@
-# Annontated Dataset for KnowProb
+# Chinese FrameNet Anontated
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 
-## Introduction
-This repository contains 1,000 lexical units (lexical-units.json), 10 frames and xxx FEs (frame_info.json). 
-For sentence instances with frame semantic, it consists of 100 sentences (sentences-data.json), 
-involving xxx instances of frame and xxx instances of frame elements. 
+## Data Statistic
+This repository shows 1,000 lexical units (lexical-units-little.json), 10 frames and 72 types of frame elements (FEs) (frame_info_little.json). 
+Here, each frame has an average of 42.2 FEs. 
+For sentence instances with frame semantics, it consists of 100 sentences (sentences-data-little.json), involving 10 instances of frames and 255 instances of FEs. 
 
 
-
-If you need more resource with frame semantic annotated by us, please contact us by [email 1](yunxiaomr@163.com) or [email 2](liru@sxu.edu.cn).
-
+If you want to access more data resources with frame semantic annotated, please contact us by [email 1](yunxiaomr@163.com).
 
 
-Please kindly cite our paper if those resource is helpful.
+Please kindly cite our paper if those resources are helpful.
 ```bibtex
 @inproceedings{zhao-etal-2025-knowprob,
     title = "Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective",
