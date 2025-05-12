@@ -6,7 +6,7 @@ This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/li
 
 
 ## Data Statistic
-This repository shows a mini-database, including 1,000 lexical units (lexical-units.json), 10 frames and 72 types of FEs (frame_info.json). Here, each frame has an average of 42.2 FEs. 
+This repository shows a mini-database, including 1,000 lexical units (lexical-units.json), 10 frames and 72 types of FEs (frame_info.json). 
 Here, each frame has an average of 42.2 FEs. 
 For sentence instances with frame semantics, it consists of 100 sentences (sentences-data-little.json), involving 10 instances of frames and 255 instances of FEs. 
 
