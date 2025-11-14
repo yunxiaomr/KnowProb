@@ -19,23 +19,11 @@ Pre-trained Language Models (PLMs) are trained on large amounts of unlabeled dat
 ## Citation
 Please kindly cite our paper if the work is helpful.
 ```bibtex
-@inproceedings{zhao-etal-2025-knowprob,
-    title = "Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective",
-    author = "Zhao, Yunxiao  and
-      Hao, Xu and
-      Wang, Zhiqiang  and
-      Li, Xiaoli  and
-      Liang, Jiye  and
-      Li, Ru",
-    month =may,
-    year = "2025",
-    address = {Berlin, Heidelberg},
-    publisher = {Springer-Verlag},
-    booktitle = {Database Systems for Advanced Applications: 30th International Conference, DASFAA 2025, Singapore, Singapore, May 26–29, 2025, Proceedings, Part XXX},
-    pages = {xxx–xxx},
-    numpages = {xxx},
-    keywords = {Knowledge Probing, Black Box, Post-hoc Explanation},
-    location = {Singapore, Singapore}
+@article{zhao2025explaining,
+  title={Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective},
+  author={Zhao, Yunxiao and Xu, Hao and Wang, Zhiqiang and Li, Xiaoli and Liang, Jiye and Li, Ru},
+  journal={arXiv preprint arXiv:2508.16969},
+  year={2025}
 }
 ```
 
