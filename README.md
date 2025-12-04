@@ -27,6 +27,9 @@ Please kindly cite our paper if the work is helpful.
   journal={arXiv preprint arXiv:2508.16969},
   year={2025}
 }
+```
+
+```
 @article{li2024comprehensive,
   title={A comprehensive overview of cfn from a commonsense perspective},
   author={Li, Ru and Zhao, Yunxiao and Wang, Zhiqiang and Su, Xuefeng and Guo, Shaoru and Guan, Yong and Han, Xiaoqi and Zhao, Hongyan},
@@ -37,7 +40,6 @@ Please kindly cite our paper if the work is helpful.
   year={2024},
   publisher={Springer}
 }
-
 ```
 
 
