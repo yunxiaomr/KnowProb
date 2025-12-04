@@ -1,5 +1,6 @@
-# 🧩 KnowProb
-DASFAA2025: Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective (Long Oral)
+# 🧩 Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective
+
+**Published by the 30th International Conference on Database Systems for Advanced Applications (DASFAA) [paper link](https://arxiv.org/abs/2508.16969)**
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
@@ -9,11 +10,6 @@ This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/li
 
 ## 📘 Overview
 Pre-trained Language Models (PLMs) are trained on large amounts of unlabeled data, and they exhibit remarkable reasoning skills. However, the trustworthiness challenges have become increasingly evident. To alleviate this problem, we propose a novel knowledge-guided probing approach called KnowProb in a post-hoc explanation way, which aims to probe whether black-box PLMs understand implicit knowledge beyond the given text, rather than focusing only on the surface-level content of the text. 
-
-
-
-![panorama](https://github.com/yunxiaomr/KnowProb/blob/main/example.png)
-
 
 
 ## 🔖 Citation
