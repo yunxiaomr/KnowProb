@@ -1,6 +1,6 @@
 # 🧩 Explaining Black-box Language Models with Knowledge Probing Systems: A Post-hoc Explanation Perspective
 
-**Published by the 30th International Conference on Database Systems for Advanced Applications (DASFAA) [paper link](https://arxiv.org/abs/2508.16969)**
+**Published by the 30th International Conference on Database Systems for Advanced Applications (DASFAA) [paper](https://arxiv.org/abs/2508.16969)**
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
