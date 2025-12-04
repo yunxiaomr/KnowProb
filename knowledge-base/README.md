@@ -1,11 +1,11 @@
-# Chinese FrameNet Anontated
+# 📚 Chinese FrameNet
 
 ![version](https://img.shields.io/badge/version-1.0.0-6395ED)
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 
-## Data Statistic
+## 📊 Data Statistic
 This repository shows a mini-database, including 1,000 lexical units (lexical-units.json), 10 frames and 72 types of FEs (frame_info.json). 
 Here, each frame has an average of 42.2 FEs. 
 For sentence instances with frame semantics, it consists of 100 sentences (sentences-data-little.json), involving 10 instances of frames and 255 instances of FEs. 
