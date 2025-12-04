@@ -11,6 +11,12 @@ This reprository is licensed under [CC BY-NC 4.0](https://creativecommons.org/li
 ## 📘 Overview
 Pre-trained Language Models (PLMs) are trained on large amounts of unlabeled data, and they exhibit remarkable reasoning skills. However, the trustworthiness challenges have become increasingly evident. To alleviate this problem, we propose a novel knowledge-guided probing approach called KnowProb in a post-hoc explanation way, which aims to probe whether black-box PLMs understand implicit knowledge beyond the given text, rather than focusing only on the surface-level content of the text. 
 
+## 🗂️ Resource
+Here, a valuable manually annotated linguistic resource is Chinese FrameNet.
+- ✅ Frame database.
+- ✅ Frame Elements database.
+- ✅ Lexical Units database.
+
 
 ## 🔖 Citation
 Please kindly cite our paper if the work is helpful.
@@ -21,6 +27,17 @@ Please kindly cite our paper if the work is helpful.
   journal={arXiv preprint arXiv:2508.16969},
   year={2025}
 }
+@article{li2024comprehensive,
+  title={A comprehensive overview of cfn from a commonsense perspective},
+  author={Li, Ru and Zhao, Yunxiao and Wang, Zhiqiang and Su, Xuefeng and Guo, Shaoru and Guan, Yong and Han, Xiaoqi and Zhao, Hongyan},
+  journal={Machine Intelligence Research},
+  volume={21},
+  number={2},
+  pages={239--256},
+  year={2024},
+  publisher={Springer}
+}
+
 ```
 
 
